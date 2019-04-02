@@ -1,0 +1,7 @@
+	.global _start
+_start:	mov		R0,#0b1111011100111111	@ 16-bit data word
+		bl 		generate16
+		mov		R7,#0
+		svc		0
+		.end
+@	1000011000001111   1010011100010110   1111110011101111	1111111000011111
